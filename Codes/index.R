@@ -1,5 +1,5 @@
 # Sys.setenv(RETICULATE_PYTHON = "/Users/fujiiyuusuke/miniforge3/envs/test_env/bin/python")
-path <- "/Users/fujiiyuusuke/CE_PBM_simulator/"
+
 python_path <- "/Users/fujiiyuusuke/miniforge3/envs/test_env/bin/python"
 
 library(tidyverse)
@@ -14,6 +14,7 @@ library(ggpubr)
 library(reticulate)
 use_python(python_path)
 options(readr.show_col_types = FALSE)
+path <- str_c(getwd(),"/")
 # load --------------------------------------------------------------------
 
 load(str_c(path,"Inputs/Data/StockFlow/df_historical.RData"))

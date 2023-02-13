@@ -84,9 +84,9 @@ p2 <- df_result_filtered %>% arrange(TMR_sum) %>%
   )
 
 ggsave(plot=p1,
-       file=str_c(path,"Outputs/Results/Slides_手法説明_MappingCDF_1.jpg"),
+       file=str_c(path,"Outputs/Others/Slides_手法説明_MappingCDF_1.jpg"),
        width=7,height=6,dpi="print")
 ggsave(plot=p2,
-       file=str_c(path,"Outputs/Results/Slides_手法説明_MappingCDF_2.jpg"),
+       file=str_c(path,"Outputs/Others/Slides_手法説明_MappingCDF_2.jpg"),
        width=7,height=6,dpi="print")
 
